@@ -24,7 +24,7 @@ const InterFont = Inter({
     subsets: ["latin"],
 });
 
-export const categories = [
+const categories = [
   { 
    
     slug: 'ux-ui-design',
