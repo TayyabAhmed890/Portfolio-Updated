@@ -4,7 +4,6 @@ import { IBM_Plex_Serif, Inter, Nunito_Sans } from "next/font/google";
 import { FaBrush, FaObjectGroup} from "react-icons/fa";
 import { PiCodeFill } from "react-icons/pi";
 import { TiArrowRight } from "react-icons/ti";
-import { Code, LayoutDashboard, ShoppingCart } from "lucide-react";
 
 
 
@@ -66,10 +65,11 @@ export default function CategorySection() {
           key={index}
           className="p-6 h-48 flex flex-col justify-center items-center text-center rounded-2xl shadow-lg text-white font-semibold border-2 text-lg bg-transparent transition-all duration-300 hover:shadow-[0px_0px_20px_5px_rgba(0,200,100,0.5)]"
         >
-          <div className="flex flex-col items-center gap-3">
+          <div className="flex flex-col items-center gap-2">
             {category.icon}
-            <h1 className={`${Noto.className} font-bold text-xl`}>{category.title}</h1>
-            <h1 className={`${IBM.className} text-green-400 text-lg`}>Projects</h1>
+            <h1 className={`${Noto.className} font-bold text-lg flex flex-col justify-center`}>{category.title}
+            <span className={`${IBM.className} text-green-400 text-lg`}>Projects</span>
+            </h1>
   
             <Link href={`/Category/${category.slug}`} className="mt-3">
               <h2 className={`border-2 flex items-center justify-center border-green-400 text-green-400 px-4 py-1 rounded-md ${Noto.className} transition hover:bg-green-400 hover:text-gray-900`}>
