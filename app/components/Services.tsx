@@ -32,7 +32,7 @@ const Services = () => {
     <>
     <section className=" bg-gray-900 text-white ">
       
-      <div className="max-w-5xl px-8 mx-auto py-16  text-center backdrop-blur-sm">
+      <div className="max-w-6xl px-8 mx-auto py-16  text-center backdrop-blur-sm">
         <h2 className="text-4xl font-bold mb-10">My <span className={`${IBM.className} text-green-400`}>Services</span></h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (

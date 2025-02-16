@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Layout, Code, Brush, ShoppingCart, Smartphone, Globe, PenTool, Image as ImageIcon, Palette, Database, Server } from "lucide-react";
+import { ArrowUpRight, Code, Brush, ShoppingCart, Smartphone, Globe, PenTool, Image as ImageIcon, Palette, Database} from "lucide-react";
 import { JSX } from "react";
 import Link from "next/link";
 import { IBM_Plex_Serif } from "next/font/google";

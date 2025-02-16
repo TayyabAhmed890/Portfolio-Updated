@@ -4,7 +4,7 @@ import { IBM_Plex_Serif, Inter, Nunito_Sans } from "next/font/google";
 import { FaBrush, FaObjectGroup} from "react-icons/fa";
 import { PiCodeFill } from "react-icons/pi";
 import { TiArrowRight } from "react-icons/ti";
-import { Code, LayoutDashboard, ShoppingCart } from "lucide-react";
+// import { Code, LayoutDashboard, ShoppingCart } from "lucide-react";
 
 
 
