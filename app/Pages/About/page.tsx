@@ -23,7 +23,7 @@ const page = () => {
         >
           <h2 className="text-4xl font-bold text-white mt-5 mb-4">About <span className={`${IBM.className} text-green-400`}>Me</span></h2>
           <p className="text-lg text-gray-300">
-            I'm <span className="text-white font-semibold">Tayyab Ahmed</span>, a passionate web designer, web developer, and graphic designer. 
+            I&apos;m <span className="text-white font-semibold">Tayyab Ahmed</span>, a passionate web designer, web developer, and graphic designer. 
             With expertise in creating visually stunning and functional websites, I help businesses establish a strong online presence. 
             My design skills ensure user-friendly and engaging experiences that leave a lasting impact.
           </p>
