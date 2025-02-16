@@ -52,7 +52,7 @@ export const categories = [
   
 ];
 
-export default function ProjectsPage() {
+export default function page() {
   return (
     <div className="container mx-auto py-12 bg-gray-900 h-screen overflow-auto pt-20">
       <h2 className={`text-4xl font-bold text-center mb-8 text-gray-200 ${InterFont.className}` }>
