@@ -11,7 +11,7 @@ const IBM = IBM_Plex_Serif({
 });
 
 
-export default function page() {
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
