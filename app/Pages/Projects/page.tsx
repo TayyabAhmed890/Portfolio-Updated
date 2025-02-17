@@ -54,7 +54,7 @@ const categories = [
 
 export default function page() {
   return (
-    <div className="container max-w-7xl mx-auto py-12 bg-gray-900 h-screen overflow-auto pt-20">
+    <div className="container max-w-7xl mx-auto py-12 bg-gray-900 h-auto sm:h-screen pt-20">
       <h2 className={`text-4xl font-bold text-center mb-8 text-gray-200 ${InterFont.className}` }>
         My <span className={`${IBM.className} text-green-400`}>Projects</span>
       </h2>

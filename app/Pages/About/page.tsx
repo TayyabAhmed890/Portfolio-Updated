@@ -13,7 +13,7 @@ const IBM = IBM_Plex_Serif({
 
 const page = () => {
   return (
-    <section id="about" className="py-16 h-screen overflow-auto bg-gray-900 text-white">
+    <section id="about" className="py-16 h-auto sm:h-screen  bg-gray-900 text-white">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}

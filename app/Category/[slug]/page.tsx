@@ -68,7 +68,7 @@ export default function ProjectDetail() {
   const project = projectData[slug];
 
   return (
-    <section className="h-screen bg-gray-900 text-gray-300 pt-20 overflow-auto">
+    <section className="sm:h-screen bg-gray-900 text-gray-300 pt-20 h-auto">
       <div className="max-w-6xl mx-auto px-6 mt-2">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-200 flex flex-col">
           {project.title}
