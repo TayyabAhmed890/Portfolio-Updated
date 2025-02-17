@@ -23,16 +23,16 @@ const page = () => {
         >
           <h2 className="text-4xl font-bold text-white mt-5 mb-4">About <span className={`${IBM.className} text-green-400`}>Me</span></h2>
           <p className="text-lg text-gray-300">
-            I&apos;m <span className="text-white font-semibold">Tayyab Ahmed</span>, a passionate web designer, web developer, and graphic designer. 
+            I&apos;m <span className="text-green-400 font-semibold">Tayyab Ahmed</span>, a passionate ux/ui designer, web developer, and graphic designer. 
             With expertise in creating visually stunning and functional websites, I help businesses establish a strong online presence. 
             My design skills ensure user-friendly and engaging experiences that leave a lasting impact.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-12">
+        <div className="grid md:grid-cols-3 gap-8 mt-12 ">
           <motion.div 
-            whileHover={{ scale: 1.05 }} 
-            className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center"
+           
+            className="bg-transparent border-2 p-6 rounded-2xl shadow-lg text-center transition-all duration-300 hover:shadow-[0px_0px_20px_5px_rgba(0,200,100,0.5)] "
           >
               <h3 className="text-xl font-semibold text-green-400">UX/UI Design</h3>
             <p className="text-gray-300 mt-2">
@@ -41,8 +41,8 @@ const page = () => {
           </motion.div>
 
           <motion.div 
-            whileHover={{ scale: 1.05 }} 
-            className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center"
+           
+            className="bg-transparent border-2 p-6 rounded-2xl shadow-lg text-center transition-all duration-300 hover:shadow-[0px_0px_20px_5px_rgba(0,200,100,0.5)] "
           >
            <h3 className="text-xl font-semibold text-green-400">Web Development</h3>
             <p className="text-gray-300 mt-2">
@@ -51,8 +51,8 @@ const page = () => {
           </motion.div>
 
           <motion.div 
-            whileHover={{ scale: 1.05 }} 
-            className="bg-gray-800 p-6 rounded-2xl shadow-lg text-center"
+        
+            className="bg-transparent border-2 p-6 rounded-2xl shadow-lg text-center transition-all duration-300 hover:shadow-[0px_0px_20px_5px_rgba(0,200,100,0.5)] "
           >
              <h3 className="text-xl font-semibold text-green-400">Graphic Design</h3>
             <p className="text-gray-300 mt-2">
