@@ -9,6 +9,10 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        IBM: "var(--font-ibm)",
+        Noto: "var(--font-noto)",
+      },
   		colors: {
   			background: 'var(--background)',
   			foreground: 'var(--foreground)'

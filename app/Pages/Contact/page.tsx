@@ -63,8 +63,8 @@ export default function ContactForm() {
   return (
     <div className="isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8 text-white">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">Contact <span className={`${IBM.className} text-green-400`}>Me</span></h2>
-        <p className="mt-2 text-lg/8 text-white">Got a project or a question? Drop me a message, and I&apos;ll get back to you soon.</p>
+        <h2 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">Contact <span className={`font-IBM text-cyan-400 font-light`}>Me</span></h2>
+        <p className="mt-2 text-lg/8 text-white">Get in Touch!</p>
       </div>
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -79,7 +79,7 @@ export default function ContactForm() {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-green-400"
+              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-cyan-400"
             />
           </div>
           <div>
@@ -93,7 +93,7 @@ export default function ContactForm() {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-green-400"
+              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-cyan-400"
             />
           </div>
           <div className="sm:col-span-2">
@@ -107,7 +107,7 @@ export default function ContactForm() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-green-400"
+              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-cyan-400"
             />
           </div>
           <div className="sm:col-span-2">
@@ -121,19 +121,19 @@ export default function ContactForm() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-green-400"
+              className="block w-full rounded-md bg-transparent px-3.5 py-2 text-base text-white border border-white placeholder-gray-400 focus:outline-cyan-400"
             />
           </div>
         </div>
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-transparent border-[2px] border-green-400 px-3.5 py-2.5 text-center text-sm font-semibold text-green-400 hover:bg-green-900/50"
+            className="block w-full rounded-md bg-transparent border-[2px] border-cyan-400 px-3.5 py-2.5 text-center text-sm font-semibold text-cyan-400 hover:bg-cyan-900/50"
             disabled={loading}
           >
             {loading ? "Sending..." : "Let's talk"}
           </button>
-          {success && <p className="text-green-400 mt-4">Email sent successfully!</p>}
+          {success && <p className="text-cyan-400 mt-4">Email sent successfully!</p>}
           {error && <p className="text-red-400 mt-4">Failed to send email. Try again.</p>}
         </div>
       </form>

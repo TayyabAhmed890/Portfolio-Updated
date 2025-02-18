@@ -26,18 +26,18 @@ export default function SkillsSection() {
   return (
     <section className='py-16 bg-gray-900'>
       <div className='max-w-5xl mx-auto text-center'>
-      <h2 className="text-4xl font-bold mb-10 text-white">My <span className={`${IBM.className} text-green-400`}>Skills</span></h2>
-        <p className='text-green-400  mb-10'>Technologies and tools I work with</p>
+      <h2 className="text-4xl font-bold mb-10 text-white">My <span className={`${IBM.className} text-cyan-400`}>Skills</span></h2>
+        <p className='text-cyan-400  mb-10'>Technologies and tools I work with</p>
       </div>
 
       <div className='max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 px-6'>
         {skills.map((skill, index) => (
           <div
             key={index}
-            className='flex flex-col items-center justify-center bg-transparent border-2 p-6 rounded-xl shadow-md  transition-all duration-300 hover:scale-105 cursor-pointer hover:shadow-[0px_0px_20px_5px_rgba(0,200,100,0.5)]'
+            className='flex flex-col items-center justify-center bg-transparent border-2 p-6 rounded-xl shadow-md  transition-all duration-300 hover:scale-105 cursor-pointer hover:shadow-[0px_0px_20px_5px_rgba(0,100,100,0.6)]'
           >
             <div className='text-4xl'>{skill.icon}</div>
-            <p className='mt-3 text-lg font-semibold text-white'>{skill.name}</p>
+            <p className='mt-3 text-lg text-white font-Noto font-light'>{skill.name}</p>
           </div>
         ))}
       </div>
