@@ -41,7 +41,7 @@ const projectData: Record<string, ProjectData> = {
     projects: [
       { name: "Portfolio Website", description: "A stunning personal portfolio built with Next.js & Tailwind CSS.", icon: <Globe className="w-10 h-10 text-cyan-400" />,link:'/' },
       { name: "Blog Platform", description: "A dynamic blog system with authentication & CMS integration.", icon: <Code className="w-10 h-10 text-cyan-400" />,link:'/' },
-      { name: "E-commerce Website", description: "A Scalable and Optimized Shopping Website", icon: <ShoppingCart className="w-10 h-10 text-cyan-400" />,link:'https://web-portfolio-tayyab-ahmed.vercel.app/' },
+      { name: "E-commerce Website", description: "A Scalable and Optimized Shopping Website", icon: <ShoppingCart className="w-10 h-10 text-cyan-400" />,link:'https://marketplace-e-commerce-platform.vercel.app/' },
     ],
   },
   "graphic-design": {
