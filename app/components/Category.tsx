@@ -1,27 +1,10 @@
 
 import Link from "next/link";
-import { IBM_Plex_Serif, Inter, Nunito_Sans } from "next/font/google";
 import { FaBrush, FaObjectGroup} from "react-icons/fa";
 import { PiCodeFill } from "react-icons/pi";
 import { TiArrowRight } from "react-icons/ti";
 
 
-
-const Noto = Nunito_Sans({
-    weight: ["400"],
-    subsets: ["latin"],
-})
-
-const IBM = IBM_Plex_Serif({
-    weight: ["300"],
-    style: ["italic"],
-    subsets: ["latin"],
-});
-
-const InterFont = Inter({
-    weight: ["400", "600"],
-    subsets: ["latin"],
-});
 
 export const categories = [
   { 

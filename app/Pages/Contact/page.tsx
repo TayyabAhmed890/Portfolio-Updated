@@ -2,13 +2,6 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { IBM_Plex_Serif } from "next/font/google";
-
-const IBM = IBM_Plex_Serif({
-    weight: ["300"],
-    style: ["italic"],
-    subsets: ["latin"],
-});
 
 
 export default function ContactForm() {
