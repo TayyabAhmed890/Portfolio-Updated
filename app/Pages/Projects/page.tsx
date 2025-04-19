@@ -72,7 +72,7 @@ export const categories = [
   },
 ];
 
-export default function page() {
+export default function CategorySection() {
   const [selectedType, setSelectedType] = useState<string | null>(null);
 
   const filteredCategories =

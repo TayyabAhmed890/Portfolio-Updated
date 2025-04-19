@@ -6,9 +6,9 @@ import { ChevronDown } from "lucide-react";
 const logos = [
   {
     id: 1,
-    title: "ZenFlow Logo",
+    title: "Post Design",
     description: "A calm and minimal logo for a meditation brand.",
-    image: "/logos/zenflow.png",
+    image: "1.jpeg",
   },
   {
     id: 2,
