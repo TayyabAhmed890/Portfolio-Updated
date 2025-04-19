@@ -8,7 +8,7 @@ const logos = [
     id: 1,
     title: "Post Design",
     description: "A calm and minimal logo for a meditation brand.",
-    image: "1.jpeg",
+    image: "/Post/1.jpeg",
   },
   {
     id: 2,
