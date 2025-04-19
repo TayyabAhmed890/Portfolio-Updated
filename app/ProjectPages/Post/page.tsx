@@ -1,80 +1,72 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
 
-const logos = [
+const posts = [
   {
     id: 1,
-    title: "Post Design",
-    description: "A calm and minimal logo for a meditation brand.",
-    image: "/Post/1.jpeg",
+    image: "/Post/EnergyDrink.jpg",
   },
   {
     id: 2,
-    title: "PixelNest Studio",
-    description: "A creative and modern logo for a graphic design studio.",
-    image: "/logos/pixelnest.png",
+    image: "/Post/2.jpg",
   },
+  {
+    id: 3,
+    image: "/Post/JUST.jpg",
+  },
+  {
+    id: 4,
+    image: "/Post/luxury.jpg",
+  },
+  {
+    id: 5,
+    image: "/Post/jordon.jpg",
+  },
+  {
+    id: 6,
+    image: "/Post/1.jpeg",
+
+  },
+  {
+    id: 7,
+    image: "/Post/jbl final.jpg",
+
+  },
+  {
+    id: 8,
+    image: "/Post/DOVE.jpg",
+
+  },
+  {
+    id: 9,
+    image: "/Post/Hulk Final.jpg",
+
+  },
+
+  // Add more posts here...
 ];
 
 export default function LogoDesignPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleDropdown = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
     <section className="min-h-screen pt-24 px-4 sm:px-6 bg-gradient-to-b from-blue-50 via-white to-white pb-20 font-Poppins">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center font-inter">
           Post <br /> <span>Design</span>
         </h1>
 
-        <div className="space-y-8">
-          {logos.map((logo, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {posts.map((post) => (
             <div
-              key={logo.id}
-              className="w-full bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+              key={post.id}
+              className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
             >
-              {/* Title Row */}
-              <div className="flex items-center justify-between px-5 py-4">
-                <h2 className="text-xl font-semibold text-gray-900 font-inter">
-                  {logo.title}
-                </h2>
-                <button
-                  onClick={() => toggleDropdown(index)}
-                  className="text-blue-600 hover:underline"
-                >
-                  <ChevronDown
-                    className={`transition-transform duration-300 ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
-                    size={24}
-                  />
-                </button>
-              </div>
-
-              {/* Dropdown Content */}
-              <div
-                className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                  openIndex === index ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="px-5 pb-6">
-                  <Image
-                    src={logo.image}
-                    alt={logo.title}
-                    width={1080}
-                    height={1080}
-                    className="rounded-xl w-full h-auto object-cover mb-4"
-                  />
-                  <p className="text-gray-700 text-sm leading-relaxed font-poppins">
-                    {logo.description}
-                  </p>
-                </div>
-              </div>
+              <Image
+                src={post.image}
+                alt={`Post ${post.id}`}
+                width={1080}
+                height={1080}
+                className="w-full h-auto object-cover"
+              />
             </div>
           ))}
         </div>
