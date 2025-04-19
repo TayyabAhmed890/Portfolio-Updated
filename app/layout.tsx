@@ -4,6 +4,13 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,7 +30,7 @@ const IBM = IBM_Plex_Serif({
 });
 
 const Noto = Nunito_Sans({
-    weight: ["800"],
+    weight: ["300","800"],
     subsets: ["latin"],
     variable: "--font-noto",
 })
@@ -42,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${IBM.variable} ${Noto.variable} antialiased bg-gray-900`}
+        className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} ${IBM.variable} ${Noto.variable} antialiased min-h-screen`}
       >
     
         <Navbar/>

@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         IBM: "var(--font-ibm)",
         Noto: "var(--font-noto)",
+        Poppins: "var(--font-poppins)"
       },
   		colors: {
   			background: 'var(--background)',

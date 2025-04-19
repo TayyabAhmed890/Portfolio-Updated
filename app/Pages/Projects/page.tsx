@@ -1,65 +1,150 @@
-
+"use client";
 import Link from "next/link";
-import { FaBrush, FaObjectGroup} from "react-icons/fa";
+import { useState } from "react";
+import { FaBrush, FaObjectGroup } from "react-icons/fa";
 import { PiCodeFill } from "react-icons/pi";
 import { TiArrowRight } from "react-icons/ti";
-// import { Code, LayoutDashboard, ShoppingCart } from "lucide-react";
 
-
-const categories = [
-  { 
-   
-    slug: 'ux-ui-design',
-    title: "UX/UI Design", 
-    icon: <FaObjectGroup className="text-cyan-400" size={29} />, 
+export const categories = [
+  {
+    slug: "ux-ui-design",
+    title: "Web Design",
+    icon: <FaObjectGroup className="text-blue-700" size={29} />,
     description: "Designing user-friendly interfaces with seamless experiences.",
-    link: 'Ux'
+    link: "/ProjectPages/UserInterface/web",
+    type: "ux-ui-design",
   },
-  { 
-    
-    slug: 'graphic-design',
-    title: "Graphic Design", 
-    icon: <FaBrush className="text-cyan-400" size={29} />, 
+  {
+    slug: "ux-ui-design",
+    title: "App Design",
+    icon: <FaObjectGroup className="text-blue-700" size={29} />,
+    description: "Designing user-friendly interfaces with seamless experiences.",
+    link: "/ProjectPages/UserInterface/AppDesign",
+    type: "ux-ui-design",
+  },
+  {
+    slug: "graphic-design",
+    title: "Brand Identity",
+    icon: <FaBrush className="text-blue-700" size={29} />,
     description: "Creative visual designs, branding, and digital artwork.",
-    link: 'Design'
+    link: "/ProjectPages/Brand",
+    type: "graphic-design",
   },
-  { 
-   
-    slug: 'web-dev',
-    title: "Web Development", 
-    icon: <PiCodeFill  className="text-cyan-400" size={30} />, 
+  {
+    slug: "graphic-design",
+    title: "Logo Design",
+    icon: <FaBrush className="text-blue-700" size={29} />,
+    description: "Creative visual designs, branding, and digital artwork.",
+    link: "/ProjectPages/Logo",
+    type: "graphic-design",
+  },
+  {
+    slug: "graphic-design",
+    title: "Post Design",
+    icon: <FaBrush className="text-blue-700" size={29} />,
+    description: "Creative visual designs, branding, and digital artwork.",
+    link: "/ProjectPages/Post",
+    type: "graphic-design",
+  },
+  {
+    slug: "web-dev",
+    title: "Tech Blog",
+    icon: <PiCodeFill className="text-blue-700" size={30} />,
     description: "Building fast, responsive, and scalable web applications.",
-    link: 'WebDev'
+    link: "https://tech-blogs-tayyab.vercel.app/",
+    type: "web-dev",
   },
-  
+  {
+    slug: "web-dev",
+    title: "E-Commerce",
+    icon: <PiCodeFill className="text-blue-700" size={30} />,
+    description: "Building fast, responsive, and scalable web applications.",
+    link: "https://marketplace-e-commerce-platform.vercel.app/", 
+    type: "web-dev",
+  },
+  {
+    slug: "web-dev",
+    title: "SocialQR",
+    icon: <PiCodeFill className="text-blue-700" size={30} />,
+    description: "Building fast, responsive, and scalable web applications.",
+    link: "https://socialqr.vercel.app/", 
+    type: "web-dev",
+  },
 ];
 
-export default function page() {
+export default function CategorySection() {
+  const [selectedType, setSelectedType] = useState<string | null>(null);
+
+  const filteredCategories =
+    selectedType === null
+      ? categories
+      : categories.filter((cat) => cat.type === selectedType);
+
   return (
-    <div className="container max-w-7xl mx-auto py-12 bg-gray-900 h-auto sm:h-screen pt-20">
-      <h2 className={`text-4xl font-bold text-center mb-8 text-gray-200` }>
-        My <span className={`font-IBM font-light text-cyan-400`}>Projects</span>
+    <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
+      <h2 className="text-4xl font-bold text-center mb-12">
+        My{" "}
+        <span className="font-IBM font-light text-blue-700">Projects</span>
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
-        {categories.map((category, index) => (
-          <div
-            key={index}
-            className="p-6 h-48 flex flex-col justify-center rounded-2xl shadow-lg text-white font-semibold border-2  text-lg bg-transparent transition-shadow duration-300 hover:shadow-[0px_0px_20px_5px_rgba(0,100,100,0.6)] "
+
+      <div className="flex flex-col lg:flex-row gap-10">
+        {/* Sidebar Filters */}
+        <div className="lg:w-1/4 w-full flex flex-col gap-3 font-Noto">
+          <h3 className="text-xl font-semibold mb-2">Filter by Category</h3>
+          <button
+            onClick={() => setSelectedType(null)}
+            className={`text-left py-2 px-3 rounded-md transition-all ${
+              selectedType === null
+                ? "bg-blue-700 text-white"
+                : "hover:bg-blue-100"
+            }`}
           >
-            <div className="flex flex-col items-center gap-3">
-              {category.icon}
-              <div className="text-center text-xl">
-               
-              <h1 className={`font-Noto font-light text-center  `}>{category.title}</h1>
-              <h1 className={`font-IBM font-light text-cyan-400`}>Projects</h1>
+            All Projects
+          </button>
+          {["ux-ui-design", "graphic-design", "web-dev"].map((type) => (
+            <button
+              key={type}
+              onClick={() => setSelectedType(type)}
+              className={`text-left py-2 px-3 rounded-md capitalize transition-all ${
+                selectedType === type
+                  ? "bg-blue-700 text-white"
+                  : "hover:bg-blue-100"
+              }`}
+            >
+              {type.replace("-", " ")}
+            </button>
+          ))}
+        </div>
+
+        {/* Project Cards */}
+        <div className="lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+          {filteredCategories.map((category, index) => (
+            <div
+              key={index}
+              className="relative group transform transition-transform duration-300 cursor-pointer"
+            >
+              <div className="absolute top-0 left-0 translate-x-1.5 translate-y-1.5 h-full w-full rounded-2xl bg-black z-0"></div>
+
+              <div className="relative z-10 h-full w-full rounded-2xl border-2 border-black bg-white p-6 flex flex-col justify-center items-center text-center">
+                <div className="flex flex-col items-center gap-2">
+                  {category.icon}
+                  <h1 className="font-Noto font-light text-lg flex flex-col justify-center">
+                    {category.title}
+                    <span className="font-IBM font-light text-blue-700 text-lg">
+                      Project
+                    </span>
+                  </h1>
+
+                  <Link href={`${category.link}`} className="mt-3">
+                    <h2 className="border-2 flex items-center justify-center border-blue-700 text-blue-700 px-4 py-1 rounded-md font-Noto font-light transition hover:bg-blue-700 hover:text-white">
+                      View <TiArrowRight size={20} className="ml-1" />
+                    </h2>
+                  </Link>
+                </div>
               </div>
-              {/* <p className="text-center text-gray-300 text-sm">{category.description}</p> */}
-          <Link href={`/Category/${category.slug}`}>
-              <h2 className={`border-2 flex items-center justify-center border-cyan-400 text-cyan-400 px-3 py-1 rounded-md font-Noto font-light`}>View <TiArrowRight size={24}/></h2>
-            </Link>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

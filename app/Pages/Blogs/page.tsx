@@ -21,7 +21,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    <section className='h-screen text-white pt-28 text-center flex flex-col justify-center items-center'>
+    <section className='h-screen text-blue-700 pt-28 text-center flex flex-col justify-center items-center'>
       
       {/* {blogData.map((blog, index) => (
        
