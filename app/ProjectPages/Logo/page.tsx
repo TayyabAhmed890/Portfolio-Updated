@@ -6,15 +6,15 @@ import { ChevronDown } from "lucide-react";
 const logos = [
   {
     id: 1,
-    title: "ZenFlow Logo",
-    description: "A calm and minimal logo for a meditation brand.",
-    image: "/logos/zenflow.png",
+    title: "Xeon Visuals",
+    description: "The Xeon Visual logo captures the bold essence of storytelling through film and visuals. Designed with a modern, cinematic feel, the logo reflects professionalism, creativity, and passion. The use of red and black (or red and white) symbolizes energy, intensity, and precision—key qualities in the world of filmmaking and video editing.The typography is sleek and contemporary, with Xeon standing strong and confident, while Visual adds a touch of artistic flair. The overall design subtly hints at elements of cinema—such as play buttons, camera frames, or film strips—without being overly literal, maintaining a clean and minimalist aesthetic.This logo perfectly represents a forward-thinking brand that delivers powerful visual stories, leaving a lasting impression on every frame.",
+    image: "/combo.jpg",
   },
   {
     id: 2,
-    title: "PixelNest Studio",
-    description: "A creative and modern logo for a graphic design studio.",
-    image: "/logos/pixelnest.png",
+    title: "Lifie Routers",
+    description: "The Lifie Routers logo blends modern minimalism with tech-driven energy. Using a dynamic color palette of green, black, and white, it symbolizes speed, connectivity, and eco-conscious innovation. The clean typography paired with subtle wireless or signal-inspired elements reflects the brand’s focus on delivering fast, reliable, and smart internet solutions. This design captures the essence of a next-generation router brand built for connected lifestyles.",
+    image: "/Logo.jpg",
   },
 ];
 
