@@ -34,12 +34,12 @@ const posts = [
   },
   {
     id: 8,
-    image: "/Post/DOVE.jpg",
+    image: "/post/DOVE.jpg",
 
   },
   {
     id: 9,
-    image: "/Post/Hulk Final.jpg",
+    image: "/post/Hulk Final.jpg",
 
   },
 
