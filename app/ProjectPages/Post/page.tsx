@@ -39,7 +39,7 @@ const posts = [
   },
   {
     id: 9,
-    image: "/post/Hulk Final.jpg",
+    image: "/post/Hulk final.jpg",
 
   },
 
