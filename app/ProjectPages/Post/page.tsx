@@ -4,32 +4,32 @@ import Image from "next/image";
 const posts = [
   {
     id: 1,
-    image: "/Post/EnergyDrink.jpg",
+    image: "/post/EnergyDrink.jpg",
   },
   {
     id: 2,
-    image: "/Post/2.jpg",
+    image: "/post/2.jpg",
   },
   {
     id: 3,
-    image: "/Post/JUST.jpg",
+    image: "/post/JUST.jpg",
   },
   {
     id: 4,
-    image: "/Post/luxury.jpg",
+    image: "/post/luxury.jpg",
   },
   {
     id: 5,
-    image: "/Post/jordon.jpg",
+    image: "/post/jordon.jpg",
   },
   {
     id: 6,
-    image: "/Post/1.jpeg",
+    image: "/post/1.jpeg",
 
   },
   {
     id: 7,
-    image: "/Post/jbl final.jpg",
+    image: "/post/jbl final.jpg",
 
   },
   {
