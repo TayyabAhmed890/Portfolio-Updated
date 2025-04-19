@@ -4,7 +4,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 
-export default function ContactForm() {
+export default function page() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
