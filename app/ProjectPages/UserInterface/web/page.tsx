@@ -44,7 +44,7 @@ export default function LogoDesignPage() {
     <section className="min-h-screen pt-24 px-4 sm:px-6 bg-gradient-to-b from-blue-50 via-white to-white pb-20 font-Poppins">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center font-inter">
-          Website <br /><span>Designs</span>
+          Website <br /><span>Design</span>
         </h1>
 
         <div className="space-y-8">
