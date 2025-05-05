@@ -7,7 +7,7 @@ const logos = [
   {
     id: 1,
     title: "SocialQR",
-    description: "A calm and minimal logo for a meditation brand.",
+    description: "One QR Code, All Your Social Links Share Smarter.",
     images: [
       "/uxui/1.jpg",
       "/uxui/2.jpg",
