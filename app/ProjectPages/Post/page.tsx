@@ -52,7 +52,7 @@ export default function LogoDesignPage() {
   return (
     <section className="min-h-screen pt-24 px-4 sm:px-6 bg-gradient-to-b from-blue-50 via-white to-white pb-20 font-Poppins">
       {/* 🔙 Back to Projects Button */}
-        <div className="md:justify-start mb-8 sm:justify-center">
+        <div className="flex md:justify-start mb-8 justify-center">
           <Link
             href="/Pages/Projects"
             className="flex items-center gap-2 text-blue-700 font-medium border border-blue-700 rounded-full px-4 py-2 transition-all duration-300 hover:bg-blue-700 hover:text-white"
