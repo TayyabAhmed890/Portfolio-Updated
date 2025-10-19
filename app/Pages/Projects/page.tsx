@@ -1,13 +1,15 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { categories } from "@/lib/categories";
-
 import { TiArrowRight } from "react-icons/ti";
 
 
 export default function CategorySection() {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const typeFromQuery = searchParams.get("type");
+  const [selectedType, setSelectedType] = useState<string | null>(typeFromQuery);
 
   const filteredCategories =
     selectedType === null

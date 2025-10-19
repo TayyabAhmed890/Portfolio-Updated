@@ -1,5 +1,7 @@
 "use client";
+import { ArrowLeft } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const posts = [
   {
@@ -49,6 +51,16 @@ const posts = [
 export default function LogoDesignPage() {
   return (
     <section className="min-h-screen pt-24 px-4 sm:px-6 bg-gradient-to-b from-blue-50 via-white to-white pb-20 font-Poppins">
+      {/* 🔙 Back to Projects Button */}
+        <div className="md:justify-start mb-8 sm:justify-center">
+          <Link
+            href="/Pages/Projects"
+            className="flex items-center gap-2 text-blue-700 font-medium border border-blue-700 rounded-full px-4 py-2 transition-all duration-300 hover:bg-blue-700 hover:text-white"
+          >
+            <ArrowLeft size={18} />
+            <span>Back to Projects</span>
+          </Link>
+        </div>
       <div className="max-w-6xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center font-inter">
           Post <br /> <span>Design</span>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaLaptopCode, FaPaintBrush, FaCode } from "react-icons/fa";
+import { RiRobot2Fill } from "react-icons/ri";
 
 const services = [
   {
@@ -16,6 +17,11 @@ const services = [
     title: "Web Development",
     icon: <FaCode className="text-4xl text-blue-700" />,
     description: "Building fast, scalable, and interactive web applications.",
+  },
+  {
+    title: "Ai Agents",
+    icon: <RiRobot2Fill className="text-4xl text-blue-700" />,
+    description: "Building Agents and integrate with web applications.",
   },
 ];
 
@@ -39,7 +45,7 @@ const Services = () => {
               {/* Main Card */}
               <div className="relative z-10 h-full w-full rounded-xl border-2 border-black bg-white px-6 py-8 text-center flex flex-col items-center">
                 <div className="mb-4 text-blue-700">{service.icon}</div>
-                <h3 className="text-xl mb-2 font-Noto font-light">{service.title}</h3>
+                <h3 className="text-xl mb-2 font-Noto font-bold">{service.title}</h3>
                 <p>{service.description}</p>
               </div>
             </div>

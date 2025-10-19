@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, IBM_Plex_Serif, Nunito_Sans } from "next/font/google";
-import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import { Poppins } from 'next/font/google';
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ['latin'],

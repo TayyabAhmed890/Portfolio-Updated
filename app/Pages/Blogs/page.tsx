@@ -31,8 +31,8 @@ const page = () => {
        </div>
       ))}
      */}
-  <h1 className='font-Noto font-bold text-6xl'>404</h1>
-     <h1 className='text-2xl'>Not Found</h1>
+  <h1 className='font-Noto font-bold text-6xl'>Working!</h1>
+     <h1 className='text-2xl'>Coming Soon</h1>
     </section>
     </>
   )

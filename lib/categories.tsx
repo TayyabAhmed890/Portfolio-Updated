@@ -11,14 +11,15 @@ export const categories = [
     link: "/ProjectPages/UserInterface/web",
     type: "ux-ui-design",
   },
-  {
-    slug: "ux-ui-design",
-    title: "App Design",
-    icon: <FaObjectGroup className="text-blue-700" size={29} />,
-    description: "Designing user-friendly interfaces with seamless experiences.",
-    link: "/ProjectPages/UserInterface/AppDesign",
-    type: "ux-ui-design",
-  },
+  // Working Section Temporary Comment!
+  // {
+  //   slug: "ux-ui-design",
+  //   title: "App Design",
+  //   icon: <FaObjectGroup className="text-blue-700" size={29} />,
+  //   description: "Designing user-friendly interfaces with seamless experiences.",
+  //   link: "/ProjectPages/UserInterface/AppDesign",
+  //   type: "ux-ui-design",
+  // },
   {
     slug: "graphic-design",
     title: "Brand Identity",

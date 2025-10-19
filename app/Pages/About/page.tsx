@@ -16,9 +16,9 @@ const page = () => {
             About <span className="font-IBM font-light text-blue-700">Me</span>
           </h2>
           <p className="text-lg  font-Noto font-light">
-            I&apos;m <span className="text-blue-700">Tayyab Ahmed</span>, a passionate UX/UI designer, web developer, and graphic designer. 
-            With expertise in creating visually stunning and functional websites, I help businesses establish a strong online presence. 
-            My design skills ensure user-friendly and engaging experiences that leave a lasting impact.
+            I&apos;m <span className="text-blue-700">Tayyab Ahmed</span>, a beginner but passionate UX/UI Designer, Web Developer, and Graphic Designer just starting my creative journey.
+            I love building visually appealing, functional websites that blend design with technology. Recently, I’ve been exploring how to integrate AI into web experiences, making them smarter and more engaging.
+            Every project I take on helps me learn, grow, and move one step closer to becoming a skilled full-stack creative.
           </p>
         </motion.div>
 
@@ -36,6 +36,10 @@ const page = () => {
               title: "Graphic Design",
               desc: "Creating impactful logos, branding, and marketing materials for a strong and unique brand identity.",
             },
+            {
+              title: "Ai Agents",
+              desc: "Exploring AI Agent creation with the OpenAI Agent SDK to enhance website interactivity and intelligence.",
+            },
           ].map((item, idx) => (
             <motion.div
               key={idx}
@@ -46,7 +50,7 @@ const page = () => {
 
               {/* Main card */}
               <div className="relative z-10 h-full w-full p-6 bg-white border-2 border-black rounded-2xl text-center">
-                <h3 className="text-xl font-Noto font-light text-black">{item.title}</h3>
+                <h3 className="text-xl font-Noto font-bold text-black">{item.title}</h3>
                 <p className="text-gray-800 mt-2">{item.desc}</p>
               </div>
             </motion.div>

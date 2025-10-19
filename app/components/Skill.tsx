@@ -11,11 +11,16 @@ import {
   SiSanity,
   SiNextdotjs,
   SiAdobephotoshop,
-  SiAdobeillustrator
+  SiAdobeillustrator,
+  SiOpenai,
+  SiPython,
+  SiReact,
+  SiTypescript
 } from 'react-icons/si';
 
 const skills = [
   { name: 'Sanity', icon: <SiSanity className='text-orange-600' /> },
+  { name: 'React js', icon: <SiReact className='text-cyan-500' /> },
   { name: 'Next js', icon: <SiNextdotjs className='text-black' /> },
   { name: 'HTML', icon: <FaHtml5 className='text-orange-500' /> },
   { name: 'CSS', icon: <FaCss3Alt className='text-blue-600' /> },
@@ -23,6 +28,9 @@ const skills = [
   { name: 'Figma', icon: <FaFigma className='text-purple-500' /> },
   { name: 'Photoshop', icon: <SiAdobephotoshop className='text-blue-500' /> },
   { name: 'Illustrator', icon: <SiAdobeillustrator className='text-orange-600' /> },
+  { name: 'Python', icon: <SiPython className='text-blue-600' /> },
+  { name: 'OpenAI SDK', icon: <SiOpenai className='text-black' /> },
+  { name: 'TypeScript', icon: <SiTypescript className='text-blue-700' /> },
 ];
 
 const IBM = IBM_Plex_Serif({
