@@ -10,7 +10,7 @@ const navigation = [
   { name: 'About', href: '/Pages/About' },
   { name: 'Projects', href: '/Pages/Projects' },
   // { name: 'Clients', href: '/Pages/Clients' },
-  // { name: 'Blogs', href: '/Pages/Blogs' },
+  { name: 'Blog', href: 'https://theprogramminginfotech.blogspot.com/'},
   { name: 'Contact', href: '/Pages/Contact' },
 ]
 

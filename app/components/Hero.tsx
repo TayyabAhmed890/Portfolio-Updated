@@ -7,13 +7,13 @@ const Hero: React.FC = () => {
     <section className="pt-20 relative text-center flex items-center justify-center bg-cover bg-center h-96 w-full bg-gradient-to-b from-blue-200/50 to-transparent">
       <div className="relative z-10 p-4 md:p-8">
         <h1 className="font-Noto text-4xl md:text-5xl font-bold">
-          <span className="font-IBM font-light text-blue-700">Hello </span><span className="">Iam</span> <br /> Tayyab Ahmed <br />
+          <span className="font-IBM font-light text-blue-700">Hello </span><span className="">Iam</span> <br/> <span className="">Tayyab Ahmed</span> <br />
           <HeroTypewriter
             words={["Student","Designer","Developer"]}
             typingSpeed={100}
             deletingSpeed={50}
             pauseBetween={1500}
-            className="text-blue-700 text-3xl font-Poppins font-bold md:text-4xl"
+            className="text-blue-700 text-3xl font-extrabold font-Poppins md:text-4xl"
           />
         </h1>
 
