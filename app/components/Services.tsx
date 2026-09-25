@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaLaptopCode, FaPaintBrush, FaCode } from "react-icons/fa";
+import { FaPaintBrush, FaCode } from "react-icons/fa";
 import { RiRobot2Fill } from "react-icons/ri";
 
 const services = [
