@@ -10,9 +10,11 @@ const navigation = [
   { name: 'About', href: '/Pages/About' },
   { name: 'Projects', href: '/Pages/Projects' },
   // { name: 'Clients', href: '/Pages/Clients' },
-  { name: 'Blog', href: 'https://theprogramminginfotech.blogspot.com/'},
+  { name: 'Blog', href: 'https://theprogramminginfotech.blogspot.com/',newPage: "blank"},
   { name: 'Contact', href: '/Pages/Contact' },
 ]
+
+console.log(navigation)
 
 const PoppinsFont = Poppins({
   subsets: ['latin'],
@@ -43,7 +45,7 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="text-sm/6 font-semibold hover:text-blue-700">
+              <Link key={item.name} href={item.href} target={item.newPage || undefined} className="text-sm/6 font-semibold hover:text-blue-700">
                 {item.name}
               </Link>
             ))}
