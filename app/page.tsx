@@ -8,12 +8,10 @@ import SkillsSection from "./components/Skill";
 export default function Home() {
   return (
     <>
-   
     <Hero/>
     <Service/>
     <SkillsSection/>
     <CategorySection/>
-  
     </>
   );
 }

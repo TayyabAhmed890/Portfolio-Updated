@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
         <h1 className="font-Noto text-4xl md:text-5xl font-bold">
           <span className="font-IBM font-light text-blue-700">Hello </span><span className="">Iam</span> <br /> Tayyab Ahmed <br />
           <HeroTypewriter
-            words={["Web Developer", "Graphic Designer", "AI Enthusiast"]}
+            words={["Student","Designer","Developer"]}
             typingSpeed={100}
             deletingSpeed={50}
             pauseBetween={1500}
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <a
-          href="/Resume.pdf"
+          href="/dev resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="relative mt-4 inline-block"

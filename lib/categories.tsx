@@ -5,7 +5,7 @@ import { PiCodeFill } from "react-icons/pi";
 export const categories = [
   {
     slug: "ux-ui-design",
-    title: "Web Design",
+    title: "UXUI Design",
     icon: <FaObjectGroup className="text-blue-700" size={29} />,
     description: "Designing user-friendly interfaces with seamless experiences.",
     link: "/ProjectPages/UserInterface/web",
@@ -46,10 +46,10 @@ export const categories = [
   },
   {
     slug: "web-dev",
-    title: "Tech Blog",
+    title: "Todo App",
     icon: <PiCodeFill className="text-blue-700" size={30} />,
     description: "Building fast, responsive, and scalable web applications.",
-    link: "https://tech-blogs-tayyab.vercel.app/",
+    link: "https://tayyabahmed890.github.io/Todo_Manager/",
     type: "web-dev",
   },
   {
@@ -66,6 +66,14 @@ export const categories = [
     icon: <PiCodeFill className="text-blue-700" size={30} />,
     description: "Building fast, responsive, and scalable web applications.",
     link: "https://socialqr.vercel.app/",
+    type: "web-dev",
+  },
+  {
+    slug: "web-dev",
+    title: "Besocial",
+    icon: <PiCodeFill className="text-blue-700" size={30} />,
+    description: "Building fast, responsive, and scalable web applications.",
+    link: "https://thebesocial.vercel.app/",
     type: "web-dev",
   },
 ];

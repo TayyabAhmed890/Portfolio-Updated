@@ -15,22 +15,35 @@ import {
   SiOpenai,
   SiPython,
   SiReact,
-  SiTypescript
+  SiTypescript,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiSupabase
 } from 'react-icons/si';
+import { BiLogoFirebase,BiLogoPostgresql } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
 
 const skills = [
-  { name: 'Sanity', icon: <SiSanity className='text-orange-600' /> },
-  { name: 'React js', icon: <SiReact className='text-cyan-500' /> },
-  { name: 'Next js', icon: <SiNextdotjs className='text-black' /> },
   { name: 'HTML', icon: <FaHtml5 className='text-orange-500' /> },
   { name: 'CSS', icon: <FaCss3Alt className='text-blue-600' /> },
   { name: 'JavaScript', icon: <FaJs className='text-yellow-500' /> },
-  { name: 'Figma', icon: <FaFigma className='text-purple-500' /> },
-  { name: 'Photoshop', icon: <SiAdobephotoshop className='text-blue-500' /> },
-  { name: 'Illustrator', icon: <SiAdobeillustrator className='text-orange-600' /> },
+  { name: 'React js', icon: <SiReact className='text-cyan-500' /> },
+  { name: 'Next js', icon: <SiNextdotjs className='text-black' /> },
+  { name: 'TypeScript', icon: <SiTypescript className='text-blue-700' /> },
+  { name: 'Node js', icon: <SiNodedotjs className='text-green-700' /> },
+  { name: 'Express js', icon: <SiExpress className='text-yellow-600' /> },
+  { name: 'Sanity', icon: <SiSanity className='text-orange-600' /> },
+  { name: 'Mongo DB', icon: <SiMongodb className='text-green-600' /> },
+  { name: 'Firebase', icon: <BiLogoFirebase className='text-red-800' /> },
+  { name: 'PostgreSQL', icon: <BiLogoPostgresql className='text-blue-800' /> },
+  { name: 'MySQL', icon: <GrMysql className='text-blue-600' /> },
+  { name: 'Supabase', icon: <SiSupabase className='text-green-400' /> },
   { name: 'Python', icon: <SiPython className='text-blue-600' /> },
   { name: 'OpenAI SDK', icon: <SiOpenai className='text-black' /> },
-  { name: 'TypeScript', icon: <SiTypescript className='text-blue-700' /> },
+  { name: 'Photoshop', icon: <SiAdobephotoshop className='text-blue-500' /> },
+  { name: 'Illustrator', icon: <SiAdobeillustrator className='text-orange-600' /> },
+  { name: 'Figma', icon: <FaFigma className='text-purple-500' /> },
 ];
 
 const IBM = IBM_Plex_Serif({

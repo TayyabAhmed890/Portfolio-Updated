@@ -55,7 +55,7 @@ export default function LogoDesignPage() {
           </Link>
         </div>
         <h1 className="text-4xl md:text-5xl font-bold text-blue-700 mb-12 text-center font-inter">
-          Website <br /><span>Design</span>
+          UXUI <br /><span>Design</span>
         </h1>
 
         <div className="space-y-8">

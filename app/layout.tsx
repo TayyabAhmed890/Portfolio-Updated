@@ -51,13 +51,10 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} ${geistSans.variable} ${geistMono.variable} ${IBM.variable} ${Noto.variable} antialiased min-h-screen`}
       >
-    
         <Navbar/>
         {children}
         <ScrollToTop/>
         <Footer/>
-
-       
       </body>
     </html>
   );

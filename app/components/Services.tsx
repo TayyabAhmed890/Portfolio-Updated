@@ -3,20 +3,20 @@ import { FaLaptopCode, FaPaintBrush, FaCode } from "react-icons/fa";
 import { RiRobot2Fill } from "react-icons/ri";
 
 const services = [
+  // {
+  //   title: "Web Design",
+  //   icon: <FaLaptopCode className="text-4xl text-blue-700" />,
+  //   description: "Modern and responsive website design with UI/UX best practices.",
+  // },
   {
-    title: "Web Design",
-    icon: <FaLaptopCode className="text-4xl text-blue-700" />,
-    description: "Modern and responsive website design with UI/UX best practices.",
-  },
-  {
-    title: "Graphic Design",
+    title: "Design Creatives",
     icon: <FaPaintBrush className="text-4xl text-blue-700" />,
-    description: "Creative and visually appealing graphic designs for branding.",
+    description: "Design creative and visually appealing graphics for branding",
   },
   {
-    title: "Web Development",
+    title: "Build Mini SaaS",
     icon: <FaCode className="text-4xl text-blue-700" />,
-    description: "Building fast, scalable, and interactive web applications.",
+    description: "Building interactive web applications for solving real problems",
   },
   {
     title: "Ai Agents",
@@ -30,7 +30,7 @@ const Services = () => {
     <section>
       <div className="max-w-6xl px-8 mx-auto py-16 text-center backdrop-blur-sm">
         <h2 className="text-4xl font-bold mb-10">
-          My <span className="font-IBM font-light text-blue-700">Services</span>
+          My <span className="font-IBM font-light text-blue-700">Expertise</span>
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
